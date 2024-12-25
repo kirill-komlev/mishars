@@ -1,1 +1,101 @@
 @import './variables', './mixins', './normalize', './globals', './media', './utils';
+
+.header {
+	position: sticky;
+	top: 0;
+
+	background: white;
+	border-bottom: 1px solid $color-surface-a50;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		height: 60px;
+	}
+
+	&__logo {
+		&-img {
+			height: 32px;
+		}
+	}
+}
+
+.intro {
+	height: calc(100vh - 60px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: $gap;
+
+	color: white;
+
+	background: url('/images/background-2.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.history {
+}
+
+.introduction {
+	&__map {
+		height: 50%;
+	}
+}
+
+.our-time,
+.gerb,
+.flag,
+.holidays,
+.games,
+.clothes,
+.clothes_embroidery {
+	display: flex;
+	justify-content: space-between;
+	gap: $gap-large;
+}
+
+.our-time {
+	&__image {
+		width: 300px;
+	}
+}
+
+.flag {
+	&__image {
+		height: 300px;
+		width: 400px;
+	}
+}
+
+.gerb {
+	&__image {
+		width: 400px;
+	}
+}
+
+.holidays {
+	&__image {
+		height: 450px;
+	}
+}
+
+.clothes {
+	&__buttons {
+		display: flex;
+		gap: $gap;
+	}
+	&__info {
+		&-list {
+			flex-direction: column;
+		}
+	}
+
+	&__image {
+		height: 400px;
+		width: 400px;
+	}
+}

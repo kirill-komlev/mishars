@@ -17,3 +17,38 @@
 		display: none !important;
 	}
 }
+
+.background-tint {
+	background-color: #121212bf !important;
+	background-blend-mode: multiply;
+}
+
+.inner {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
+
+.image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: $gap-small;
+
+	margin-bottom: 32px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.button {
+	padding: 12px 24px;
+	border: 1px solid $color-primary-a0;
+
+	&:hover {
+		color: white;
+		background: $color-primary-a0;
+	}
+}
