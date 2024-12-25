@@ -270,7 +270,7 @@ export default function App() {
 						</div>
 						{clothes === 'male' ? (
 							<>
-								<div className='clothes'>
+								<div className='clothes reverse'>
 									<div className='clothes__info male'>
 										<h3 className='clothes__info-title'>Мужские народные одеяния </h3>
 										<ul className='clothes__info-list'>
@@ -302,7 +302,7 @@ export default function App() {
 							</>
 						) : (
 							<>
-								<div className='clothes'>
+								<div className='clothes reverse'>
 									<div className='clothes__info female'>
 										<h3 className='clothes__info-title'>Женские народные одеяния </h3>
 										<ul className='clothes__info-list'>
