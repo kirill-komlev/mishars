@@ -52,7 +52,10 @@
 .holidays,
 .games,
 .clothes,
-.clothes_embroidery {
+.clothes_embroidery,
+.creation,
+.life,
+.crafts_live {
 	display: flex;
 	justify-content: space-between;
 	gap: $gap-large;
@@ -97,5 +100,36 @@
 	&__image {
 		height: 400px;
 		width: 400px;
+	}
+}
+
+.creation {
+	&__image {
+		width: 450px;
+	}
+}
+
+.life {
+	&__image {
+		width: 400px;
+	}
+}
+
+.crafts_live {
+	&__image {
+		width: 400px;
+	}
+}
+
+.footer {
+	padding: $padding-inner 0;
+
+	color: white;
+	background: $color-surface-a0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }

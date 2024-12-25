@@ -49,7 +49,7 @@ export default function App() {
 							</li>
 							<li className='header__list-item'>
 								<a
-									href=''
+									href='#creation'
 									className='header__list-link'
 								>
 									Народное творчество
@@ -57,7 +57,7 @@ export default function App() {
 							</li>
 							<li className='header__list-item'>
 								<a
-									href=''
+									href='#live'
 									className='header__list-link'
 								>
 									Жизнь и быт
@@ -65,7 +65,7 @@ export default function App() {
 							</li>
 							<li className='header__list-item'>
 								<a
-									href=''
+									href='#crafts'
 									className='header__list-link'
 								>
 									Народные промыслы
@@ -354,7 +354,305 @@ export default function App() {
 						</div>
 					</div>
 				</section>
+				<section
+					className='creation'
+					id='creation'
+				>
+					<div className='creation__inner inner container'>
+						<h2 className='creation__title'>Народное творчество и фольклор</h2>
+						<p className='creation__text'>
+							Первоначально все искусство было народным; с общественным разделением труда и выделением ремесел появилось профессиональное искусство. Художественная система и
+							орнаментальный язык татарского народного искусства восходят к культуре древнетюркских племен
+						</p>
+						<div className='creation'>
+							<div className='creation__info inner'>
+								<h3>Фольклор</h3>
+								<p>
+									Татарский фольклор — характерными жанрами являются эпос, сказки, легенды, баиты, песни, загадки, пословицы и поговорки. Распространение получили баиты,
+									своеобразный жанр, присущий татарской народной поэзии и по своей сущности близкий к балладам. Баиты носят лиро-эпический характер, повествуют о чрезвычайных,
+									трагических, исторических событиях, судьбах отдельных людей.
+								</p>
+							</div>
+
+							<div className='creation__image-group image'>
+								<img
+									src={new URL('../images/creation.png', import.meta.url).href}
+									alt=''
+									className='creation__image'
+								/>
+								<h5 className='creation__subtitle'>Сказка в стихах Габдулы Тукая: Су анасы</h5>
+							</div>
+						</div>
+
+						<div className='creation reverse'>
+							<div className='creation__info inner'>
+								<h3>Легенды </h3>
+								<p>
+									Абзар иясе – хозяин хлева, обитающий на дворе или в хлеву. Он – властелин скота. Иногда Абзар иясе показывается людям в образе человека или животных, но только
+									издали и ночью.
+								</p>
+								<p>
+									Аждаха – дракон, чудовищный змей, демоническое создание, оборотень, обитающее в лесной чаще, в горах, в реках, озёрах и болотах. Он может быть многоголовым и с
+									огнедышащей пастью.
+								</p>
+								<p>Ак-барс. Однажды татарский мальчик-сирота, родившийся в Казани, заблудился в далёких лесах и горах.</p>
+							</div>
+
+							<div className='creation__image-group image'>
+								<img
+									src={new URL('../images/dragon.png', import.meta.url).href}
+									alt=''
+									className='creation__image'
+								/>
+								<h5 className='creation__subtitle'>Аждаха – дракон, чудовищный змей</h5>
+							</div>
+						</div>
+
+						<div className='creation'>
+							<div className='creation__info inner'>
+								<h3>Баиты </h3>
+								<p>
+									специфические произведения эпического, лирического или плакательного жанров, созданные по случаю какого-либо чрезвычайного, трагического события в жизни народа
+									или отдельного человека. Для них характерна своеобразная мелодия и исполнение в форме речитатива.
+								</p>
+							</div>
+
+							<div className='creation__image-group image'>
+								<img
+									src={new URL('../images/bait.png', import.meta.url).href}
+									alt=''
+									className='creation__image'
+								/>
+								<h5 className='creation__subtitle'>Баиты</h5>
+							</div>
+						</div>
+
+						<h3>Сказки</h3>
+						<p>
+							Наиболее древними жанрами народного творчества являются сказки, самыми древними персонажами которых являлись Койгорыш (птица счастья) и Акбузат (белый конь), которые
+							сопутствовали героям. Все звери сказок относятся к фауне Среднего Поволжья. Это, чаще всего, волк, лиса, медведь, заяц.
+						</p>
+					</div>
+				</section>
+
+				<section
+					className='live'
+					id='live'
+				>
+					<div className='live__inner inner container'>
+						<h2>Жизнь и быт </h2>
+						<p>
+							У татарского народа есть формировавшийся веками семейный уклад. В доме отец всегда главный, его воля — закон. Следующая по значимости роль отводится жёнам и матерям.
+							Детей в татарской семье всегда учат помогать нуждающимся и с уважением относиться к старшим. 
+						</p>
+
+						<div className='life'>
+							<div className='life__info inner'>
+								<h3>Сельское хозяйство </h3>
+								<p>Основной источник дохода татара-мишар является - выращивание зерновых, картофель, овощей и фруктов.</p>
+							</div>
+
+							<div className='life__image-group image'>
+								<img
+									src={new URL('../images/workers.png', import.meta.url).href}
+									alt=''
+									className='life__image'
+								/>
+								<h5 className='life__subtitle'>Рабочие</h5>
+							</div>
+						</div>
+
+						<div className='life reverse'>
+							<div className='life__info inner'>
+								<h3>Жилище </h3>
+								<p>
+									Традиционным домом у этноса была не юрта или кибитка, как у других тюрков, а деревянная изба. Её делили на две части шторой, а с XIX века — перегородкой. В
+									мужской половине избы принимали гостей, занимались ремёслами, трапезничали, а в женской чаще всего находилась кухня с печкой. Спали на нарах — длинных дощатых
+									настилах вдоль стены.
+								</p>
+								<p>
+									В татарском жилище есть два обязательных атрибута. Первый — шамаиль на стене. Это любой небольшой отрывок из Корана. Второй атрибут жилья — сундуки красного и
+									зелёного цвета, в которых татары по традиции хранили приданое.
+								</p>
+							</div>
+
+							<div className='life__image-group image'>
+								<img
+									src={new URL('../images/home.png', import.meta.url).href}
+									alt=''
+									className='life__image'
+								/>
+								<h5 className='life__subtitle'>Жилище</h5>
+							</div>
+						</div>
+						<h3>Быт</h3>
+						<p>
+							У татарского народа есть формировавшийся веками семейный уклад. В доме отец всегда главный, его воля — закон. Следующая по значимости роль отводится жёнам и матерям.
+							Детей в татарской семье всегда учат помогать нуждающимся и с уважением относиться к старшим.
+						</p>
+					</div>
+				</section>
+
+				<section
+					className='crafts'
+					id='crafts'
+				>
+					<div className='crafts__inner inner container'>
+						<h2>Народные промыслы и ремесла</h2>
+						<p>
+							На протяжении многих веков традиционными промыслами татар являются ювелирное искусство, золотное шитьё, кожаная мозаика, тамбурная вышивка, закладное ткачество,
+							деревообработка и валяльно-войлочный промысел
+						</p>
+						<div className='crafts_live'>
+							<div className='crafts_live__info inner'>
+								<h3>Ручное ковроделие </h3>
+								<p>
+									старинный народный художественный промысел существует с тех пор, как человек научился вырабатывать пряжу и ткани из волокнистых материалов. О древности культуры
+									ковроткачества свидетельствуют памятники глубокой старины – ковры, хранящиеся в музейных коллекциях, а также записи географов и историков.
+								</p>
+							</div>
+
+							<div className='crafts_live__image-group image'>
+								<img
+									src={new URL('../images/parket.png', import.meta.url).href}
+									alt=''
+									className='crafts_live__image'
+								/>
+								<h5 className='crafts_live__subtitle'>Ковроделие</h5>
+							</div>
+						</div>
+
+						<div className='crafts_live reverse'>
+							<div className='crafts_live__info inner'>
+								<h3>Золотошвейное искусство </h3>
+								<p>
+									Этот высокопрофессиональный вид искусства у татар получил развитие как вид художественного ремесла и позднее народного художественного промысла. Старинное золотое
+									шитье исполнялось специальными золотыми и серебряными нитями (русская бить, татарская ука) на бархате, реже – на шелковой, хлопчатобумажной, шерстяной или льняной
+									основе, а также на коже.
+								</p>
+							</div>
+
+							<div className='crafts_live__image-group image'>
+								<img
+									src={new URL('../images/gold.png', import.meta.url).href}
+									alt=''
+									className='crafts_live__image'
+								/>
+								<h5 className='crafts_live__subtitle'>Золотошвейное искусство</h5>
+							</div>
+						</div>
+
+						<div className='crafts_live '>
+							<div className='crafts_live__info inner'>
+								<h3>Художественное ткачество </h3>
+								<p>
+									Создание узорных тканей и ковроделие – старинные виды народного художественного творчества, имевшие в быту универсальный характер и существовавшие в виде
+									домашнего ремесла и промысла.
+								</p>
+								<p>Наряду с простыми гладкими тканями создавались богатые узорные изделия, украшенные разнообразным геометрическим орнаментом.</p>
+							</div>
+
+							<div className='crafts_live__image-group image'>
+								<img
+									src={new URL('../images/hud.png', import.meta.url).href}
+									alt=''
+									className='crafts_live__image'
+								/>
+								<h5 className='crafts_live__subtitle'>Художественное ткачество</h5>
+							</div>
+						</div>
+
+						<div className='crafts_live reverse'>
+							<div className='crafts_live__info inner'>
+								<h3>Лоскутная мозаика </h3>
+								<p>
+									В 18 веке вечера у женщин проходили за прялкой, пяльцами и ткацким станком. Ткань женщины ткали сами, полотна делали шириной 40 сантиметров, что соответствовало
+									крою полотенца или рубахи, чтобы при шитье отходов не оставалось. Постепенно в домашний обиход начали входить недорогие яркие хлопчатобумажные ткани, ширина
+									которых составляла 75-80 сантиметров, то есть шире кроя одежды. Мудрые хозяйки оставшимися при крое лоскутками стали удлинять одежду, украшать рубахи, а самые
+									мелкие лоскутки сшивались в одно разноцветное полотно.
+								</p>
+							</div>
+
+							<div className='crafts_live__image-group image'>
+								<img
+									src={new URL('../images/mosaic.png', import.meta.url).href}
+									alt=''
+									className='crafts_live__image'
+								/>
+								<h5 className='crafts_live__subtitle'>Лоскутная мозаика</h5>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
+
+			<footer className='footer'>
+				<div className='footer__inner container'>
+					<a
+						href='#'
+						className='footer__logo-link'
+					>
+						<img
+							src={logo}
+							alt=''
+							className='footer__logo-img'
+							height='32px'
+						/>
+					</a>
+					<nav className='header__menu'>
+						<ul className='header__list'>
+							<li className='header__list-item'>
+								<a
+									href='#history'
+									className='header__list-link'
+								>
+									История
+								</a>
+							</li>
+							<li className='header__list-item'>
+								<a
+									href='#tradition'
+									className='header__list-link'
+								>
+									Традиции
+								</a>
+							</li>
+							<li className='header__list-item'>
+								<a
+									href='#clothes'
+									className='header__list-link'
+								>
+									Одежда
+								</a>
+							</li>
+							<li className='header__list-item'>
+								<a
+									href='#creation'
+									className='header__list-link'
+								>
+									Народное творчество
+								</a>
+							</li>
+							<li className='header__list-item'>
+								<a
+									href='#live'
+									className='header__list-link'
+								>
+									Жизнь и быт
+								</a>
+							</li>
+							<li className='header__list-item'>
+								<a
+									href='#crafts'
+									className='header__list-link'
+								>
+									Народные промыслы
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
 		</>
 	)
 }
